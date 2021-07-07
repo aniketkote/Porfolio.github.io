@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Aniket</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/responsive.css">
+  <!-- On Scroll Animation CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+</head>
+
+<body>
+  <div class="land_area">
+
+    <!-- ------------------This is Header---- -->
+    <div id="header">
+      <div id="logo">
+        <h1>AniketKolte.com</h1>
+      </div>
+      <div id="menu">
+        <ul>
+          <li> <a href="#">Home</a></li>
+          <li> <a href="#">Blog</a></li>
+          <li> <a href="#">Projects</a></li>
+          <li> <a href="#">About</a></li>
+          <li> <a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- --------------------Mobile Nav------------------ -->
+    <div id="mobile_nav">
+      <input type="checkbox" id="overlay-input" />
+      <label for="overlay-input" id="overlay-button"><span></span></label>
+      <div id="overlay">
+        <ul>
+          <li> <a href="#">Home</a></li>
+          <li> <a href="#">Blog</a></li>
+          <li> <a href="#">Projects</a></li>
+          <li> <a href="#">About</a></li>
+          <li> <a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- -----------Profile Section----- -->
+
+    <div class="profile_container">
+      <div class="image_crop  " data-aos="zoom-in-up">
+        <img src="img/Profile.jpg" alt="Aniket" class="profile_pic">
+      </div>
+      <div class="container">
+        <p data-aos="zoom-out">Hello! I am <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+      </div>
+
+      <div class="about_desc">
+
+      </div>
+    </div>
+  </div>
+  <!-- --------------------About Section-------------------- -->
+  <section class="about_section">
+    <h1 data-aos="flip-up">About Me</h1>
+  </section>
+  <!-- Skills Section -->
+  <section class="section_container">
+    <h1 data-aos="flip-up">Skills</h1>
+    <div class="skill_wrapper">
+
+      <div class="skill_container">
+
+        <div data-aos="fade-right" class="box progressbar" data-animate="false">
+          <div class="chart circle" data-percent="92" data-scale-color="#ffb400">92%</div>
+          <h2>Html</h2>
+        </div>
+        <div data-aos="fade-right" class="box progressbar" data-animate="false">
+          <div class="chart circle" data-percent="73" data-scale-color="#ffb400">73%</div>
+          <h2>Css</h2>
+        </div>
+        <div data-aos="fade-right" class="box progressbar" data-animate="false">
+          <div class="chart circle" data-percent="67" data-scale-color="#ffb400">67%</div>
+          <h2>Javascript</h2>
+        </div>
+        <div data-aos="fade-right" class="box progressbar" data-animate="false">
+          <div class="chart circle" data-percent="74" data-scale-color="#ffb400">74%</div>
+          <h2>Java</h2>
+        </div>
+        <div data-aos="fade-right" class="box progressbar" data-animate="false">
+          <div class="chart circle" data-percent="78" data-scale-color="#ffb400">78%</div>
+          <h2>PostgreSQL</h2>
+        </div>
+        <div data-aos="fade-right" class="box progressbar" data-animate="false">
+          <div class="chart circle" data-percent="72" data-scale-color="#ffb400">72%</div>
+          <h2>Photoshop</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+
+    $(document).ready(function ($) {
+      function animateElements() {
+        $('.progressbar').each(function () {
+          var elementPos = $(this).offset().top;
+          var topOfWindow = $(window).scrollTop();
+          var percent = $(this).find('.circle').attr('data-percent');
+          var percentage = parseInt(percent, 10) / parseInt(100, 10);
+          var animate = $(this).data('animate');
+          if (elementPos < topOfWindow + $(window).height() - 100 && !animate) {
+            $(this).data('animate', true);
+            $(this).find('.circle').circleProgress({
+              startAngle: -Math.PI / 2,
+              value: percent / 100,
+              size: 180,
+              thickness: 5,
+              emptyFill: "#373737",
+              fill: {
+                color: '#17d3e6'
+              }
+            }).on('circle-animation-progress', function (event, progress, stepValue) {
+              $(this).find('div').text((stepValue * 100).toFixed(1) + "%");
+            }).stop();
+          }
+        });
+      }
+
+      // Show animated elements
+      animateElements();
+      $(window).scroll(animateElements);
+
+
+
+
+    }); //end document ready function
+
+
+  //   $(function() {
+  //   $('.chart').easyPieChart({
+  //     size: 160,
+  //     barColor: "#17d3e6",
+  //     scaleLength: 0,
+  //     lineWidth: 15,
+  //     trackColor: "#373737",
+  //      lineCap: "circle",
+  //      animate: 2000,
+  //    });
+  // });
+
+
+  </script>
+
+  <!-- javascript FIle  -->
+  <script src="js/javascript.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+ 
+
+</body>
+
+</html>
