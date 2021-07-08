@@ -181,7 +181,7 @@ body{
       .section_wrapper .box
       {
         margin: 20px 0px;
-        
+
         
       }
 
@@ -366,6 +366,7 @@ body{
   transform: translateX(0);
 }
 .mainMenu ul {
+  height: 100vh;
   padding:0px;
   display: table-cell;
   vertical-align: middle;
