@@ -130,7 +130,6 @@ body{
 
     .profile_container
     {
-        padding: 30px 0px;
         display: grid;
         height: 100vh;
         place-items:center;
