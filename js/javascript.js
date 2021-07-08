@@ -94,14 +94,30 @@
             }
 
         });
-        $('.aniket').click(function() {
-          
-            if($(this).hasClass('stop-scrolling')) {
+      
+      });
+    //  -------------------- Testing ---------------
+    $('a').click(function() {
+      
+        if($('.menuBtn').toggleClass('act')) {
+          $('.mainMenu').removeClass('act');
+          $('.menuBtn').removeClass('act');
+        }
+       
+
+    });
+
+    //  -------------------- Testing ---------------
+
+
+      $("a").click(function() {
+        $('.menuBtn').click
+            if($('body').hasClass('stop-scrolling')) {
               
               $('body').removeClass('stop-scrolling')
             }
         });
-      });
+
 
       // smooth scroll to anchor, with option of hash appearing in url. Thanks:
 // https://paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
