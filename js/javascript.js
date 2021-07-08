@@ -44,3 +44,63 @@
 
       //  Skills Bar Function
 
+      $(document).ready(function ($) {
+        function animateElements() {
+          $('.progressbar').each(function () {
+            var elementPos = $(this).offset().top;
+            var topOfWindow = $(window).scrollTop();
+            var percent = $(this).find('.circle').attr('data-percent');
+            var percentage = parseInt(percent, 10) / parseInt(100, 10);
+            var animate = $(this).data('animate');
+            if (elementPos < topOfWindow + $(window).height() - 100 && !animate) {
+              $(this).data('animate', true);
+              $(this).find('.circle').circleProgress({
+                startAngle: -Math.PI / 2,
+                value: percent / 100,
+                size: 180,
+                thickness: 5,
+                emptyFill: "#373737",
+                fill: {
+                  color: '#17d3e6'
+                }
+              }).on('circle-animation-progress', function (event, progress, stepValue) {
+                $(this).find('div').text((stepValue * 100).toFixed(1) + "%");
+              }).stop();
+            }
+          });
+        }
+  
+        // Show animated elements
+        animateElements();
+        $(window).scroll(animateElements);
+  
+  
+  
+  
+      });
+
+
+      // -------------// Mobile Menu----------------
+
+      $(document).ready(function(){
+        // menu click event
+        $('.menuBtn').click(function() {
+          $(this).toggleClass('act');
+            if($(this).hasClass('act')) {
+              $('.mainMenu').addClass('act');
+              $('body').addClass('stop-scrolling')
+            }
+            else {
+              $('.mainMenu').removeClass('act');
+              $('body').removeClass('stop-scrolling')
+            }
+
+        });
+        $('.aniket').click(function() {
+          
+            if($(this).hasClass('stop-scrolling')) {
+              
+              $('body').removeClass('stop-scrolling')
+            }
+        });
+      });
