@@ -90,6 +90,7 @@ $(document).ready(function () {
     }
     else {
       $('.mainMenu').removeClass('act');
+      $('body').removeClass('stop-scrolling')
     }
 
   });
