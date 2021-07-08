@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body id="home">
   <div class="land_area">
 
     <!-- ------------------This is  Desktop Header---- -->
@@ -23,10 +23,11 @@
       </div>
       <div id="menu">
         <ul>
-          <li> <a href="#">Home</a></li>
+          <li> <a href="#home">Home</a></li>
+          <li> <a href="#about">About</a></li>
           <li> <a href="#skill">Skill</a></li>
           <li> <a href="#project">Projects</a></li>
-          <li> <a href="#about">About</a></li>
+          <li> <a href="#services">Services</a></li>
           <li> <a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -40,9 +41,10 @@
       <nav class="mainMenu">
         <ul>
           <li> <a href="#">Home</a></li>
+          <li> <a href="#about">About</a></li>
           <li> <a href="#skill">Skill</a></li>
           <li> <a href="#project">Projects</a></li>
-          <li> <a href="#about">About</a></li>
+          <li> <a href="#services">Services</a></li>
           <li> <a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -62,20 +64,20 @@
       <div class="container">
         <p data-aos="zoom-out">Hello! I am <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
       </div>
-      <div>
-        <a href="#about" class="btn btn-circle">
-          <i class="fa fa-angle-double-down"></i>
-        </a>
-      </div>
-
-
-    </div>
   </div>
+
+  </div>
+
+  </div>
+  <div>
+    <a href="#about" class="btn btn-circle">
+      <i class="fa fa-angle-double-down"></i>
+    </a>
   </div>
 
   <!-- --------------------About Section-------------------- -->
-  <section class="About_section_container" id="about">
-    <h1>AboutMe</h1>
+  <section class="section_wrapper" id="about">
+    <h1 data-aos="flip-up">AboutMe</h1>
   </section>
   <!-- ------------------------About Section End ---------------------------------- -->
 
@@ -118,29 +120,34 @@
   <!-- ------------------------------Skill Section end----------------------------- -->
 
   <!-- SERVICES -->
-  <div id="services" class="sec-services">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-4">
-          <i class="fa fa-4x fa-paint-brush"></i>
+  <div id="services" class="section_wrapper">
+
+    <h1 data-aos="flip-up">Services</h1>
+
+        <div class="box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+          <p><i class="fa fa-4x fa-paint-brush"></i></p>
           <h2 class="h3">Beautiful Design</h2>
-          <p>Website is beautiful, unique and tailored to suit your needs and requirements.</p>
+          <p>Website is beautiful, unique and tailored to <br> suit your needs and requirements.</p>
         </div>
-
-        <div class="col-sm-4">
-          <i class="fa fa-4x fa-code"></i>
+        <div class="box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+          <p><i class="fa fa-4x fa-code"></i></p>
           <h2 class="h3">Clean Code</h2>
-          <p>Codes are written in HTML / CSS &amp; JavaScript (jQuery).</p>
+          <p>Codes are written in HTML / CSS <br> JavaScript (jQuery).</p>
         </div>
 
-        <div class="col-sm-4">
-          <i class="fa fa-4x fa-tablet"></i>
+        <div class="box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+          <p><i class="fa fa-4x fa-fighter-jet"></i></p>
+          <h2 class="h3">Smooth Animation</h2>
+          <p>Creating Smooth Animation Using <br> jQuery & CSS.</p>
+        </div>
+
+        <div class="box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+          <p><i class="fa fa-4x fa-tablet"></i></p>
           <h2 class="h3">Responsive</h2>
-          <p>Try to make websites completely responsive. They will look great on desktop, tablets and mobile phones too.
+          <p>Try to make websites completely responsive.<br> They will look great on desktop, tablets <br>and mobile phones too.
           </p>
         </div>
-      </div>
-    </div>
+
   </div>
   <!-- END--SERVICES -->
 
