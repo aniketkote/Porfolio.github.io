@@ -23,27 +23,14 @@
       <div id="menu">
         <ul>
           <li> <a href="#">Home</a></li>
-          <li> <a href="#">Blog</a></li>
-          <li> <a href="#">Projects</a></li>
-          <li> <a href="#">About</a></li>
-          <li> <a href="#">Contact</a></li>
+          <li> <a href="#skill">Skill</a></li>
+          <li> <a href="#project">Projects</a></li>
+          <li> <a href="#about">About</a></li>
+          <li> <a href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
     <!-- --------------------Mobile Nav------------------ -->
-    <!-- <div id="mobile_nav">
-      <input type="checkbox" id="overlay-input" />
-      <label for="overlay-input" id="overlay-button"><span></span></label>
-      <div id="overlay">
-        <ul>
-          <li> <a href="#">Home</a></li>
-          <li> <a href="#">Blog</a></li>
-          <li> <a href="#">Projects</a></li>
-          <li> <a href="#">About</a></li>
-          <li> <a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </div> -->
 
     <div class="mainContainer">
 			<a href="#" class="menuBtn">
@@ -52,29 +39,16 @@
 			<nav class="mainMenu">
 				<ul>
           <li> <a href="#">Home</a></li>
-          <li> <a href="#">Blog</a></li>
-          <li> <a href="#">Projects</a></li>
-          <li> <a href="#">About</a></li>
-          <li> <a href="#">Contact</a></li>
+          <li> <a href="#skill">Skill</a></li>
+          <li> <a href="#project">Projects</a></li>
+          <li> <a href="#about">About</a></li>
+          <li> <a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		<div class="container">
 		</div>
 	</div>
-  <script>
-    $(document).ready(function(){
-	// menu click event
-	$('.menuBtn').click(function() {
-		$(this).toggleClass('act');
-			if($(this).hasClass('act')) {
-				$('.mainMenu').addClass('act');
-			}
-			else {
-				$('.mainMenu').removeClass('act');
-			}
-	});
-});
-  </script>
+
 
 
 
@@ -95,13 +69,17 @@
       </div>
     </div>
   </div>
+
   <!-- --------------------About Section-------------------- -->
-  <!-- <section class="about_section">
-    <h1 data-aos="flip-up">About Me</h1>
-  </section> -->
-  <!-- Skills Section -->
-  <section class="section_container">
-    <h1 data-aos="flip-up">Skills</h1>
+  <section class="About_section_container" id="about">
+    <h1>About</h1>
+  </section>
+  <!-- ------------------------About Section End ---------------------------------- -->
+
+
+  <!-- -------------------------------------Skills Section-- ---------------------->
+  <section class="section_container" id="skill">
+    <h1 data-aos="flip-up" >Skills</h1>
     <div class="skill_wrapper">
 
       <div class="skill_container">
@@ -134,6 +112,8 @@
     </div>
   </section>
 
+  <!-- ------------------------------Skill Section end----------------------------- -->
+
   <!-- SERVICES -->  
   <div id="services" class="sec-services">
     <div class="container-fluid">
@@ -160,70 +140,13 @@
   </div>
   <!-- END--SERVICES -->
 
-  <script>
-
-    $(document).ready(function ($) {
-      function animateElements() {
-        $('.progressbar').each(function () {
-          var elementPos = $(this).offset().top;
-          var topOfWindow = $(window).scrollTop();
-          var percent = $(this).find('.circle').attr('data-percent');
-          var percentage = parseInt(percent, 10) / parseInt(100, 10);
-          var animate = $(this).data('animate');
-          if (elementPos < topOfWindow + $(window).height() - 100 && !animate) {
-            $(this).data('animate', true);
-            $(this).find('.circle').circleProgress({
-              startAngle: -Math.PI / 2,
-              value: percent / 100,
-              size: 180,
-              thickness: 5,
-              emptyFill: "#373737",
-              fill: {
-                color: '#17d3e6'
-              }
-            }).on('circle-animation-progress', function (event, progress, stepValue) {
-              $(this).find('div').text((stepValue * 100).toFixed(1) + "%");
-            }).stop();
-          }
-        });
-      }
-
-      // Show animated elements
-      animateElements();
-      $(window).scroll(animateElements);
-
-
-
-
-    }); //end document ready function
-
-
-  //   $(function() {
-  //   $('.chart').easyPieChart({
-  //     size: 160,
-  //     barColor: "#17d3e6",
-  //     scaleLength: 0,
-  //     lineWidth: 15,
-  //     trackColor: "#373737",
-  //      lineCap: "circle",
-  //      animate: 2000,
-  //    });
-  // });
-
-
-  
-
-  </script>
-
-
   <!-- javascript FIle  -->
   <script src="js/javascript.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
- 
-
+  
 </body>
 
 </html>
