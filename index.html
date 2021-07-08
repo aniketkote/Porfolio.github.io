@@ -31,7 +31,7 @@
       </div>
     </div>
     <!-- --------------------Mobile Nav------------------ -->
-    <div id="mobile_nav">
+    <!-- <div id="mobile_nav">
       <input type="checkbox" id="overlay-input" />
       <label for="overlay-input" id="overlay-button"><span></span></label>
       <div id="overlay">
@@ -43,7 +43,39 @@
           <li> <a href="#">Contact</a></li>
         </ul>
       </div>
-    </div>
+    </div> -->
+
+    <div class="mainContainer">
+			<a href="#" class="menuBtn">
+				<span class="lines"></span>
+			</a>
+			<nav class="mainMenu">
+				<ul>
+          <li> <a href="#">Home</a></li>
+          <li> <a href="#">Blog</a></li>
+          <li> <a href="#">Projects</a></li>
+          <li> <a href="#">About</a></li>
+          <li> <a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		<div class="container">
+		</div>
+	</div>
+  <script>
+    $(document).ready(function(){
+	// menu click event
+	$('.menuBtn').click(function() {
+		$(this).toggleClass('act');
+			if($(this).hasClass('act')) {
+				$('.mainMenu').addClass('act');
+			}
+			else {
+				$('.mainMenu').removeClass('act');
+			}
+	});
+});
+  </script>
+
 
 
     <!-- -----------Profile Section----- -->
