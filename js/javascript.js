@@ -1,4 +1,3 @@
-
           const typedTextSpan = document.querySelector(".typed-text");
        const cursorSpan = document.querySelector(".cursor");
        
@@ -40,7 +39,6 @@
        document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
          if(textArray.length) setTimeout(type, newTextDelay + 250);
        });
-
 
       //  Skills Bar Function
 
