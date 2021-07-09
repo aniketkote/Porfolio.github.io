@@ -141,6 +141,7 @@ body{
 
     .image_crop
     {
+       margin-top: -80px;
         align-self: center;
         display: flex;
         justify-content: center;
