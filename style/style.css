@@ -80,16 +80,16 @@ body{
 
 
     /*---------------------- About Section Start-------------------- */
-    .section_wrapper
+    .about_section_wrapper
     {
       min-height: 100vh;
       width: 100vw;
-      background-color: #008877;
+      background-color: #3d3d3d;
       display: grid;
       place-items:center;
       justify-content: center;
     }
-    .section_wrapper h1
+    .about_section_wrapper h1
     {
         /* display: block; */
         align-self: flex-start;
@@ -102,6 +102,29 @@ body{
     }
 
     /*---------------------- About Section End-------------------- */
+
+    /* Project Section Start */
+    .project_section_wrapper
+    {
+      min-height: 100vh;
+      width: 100vw;
+      background-color: #34495e;
+      display: grid;
+      place-items:center;
+      justify-content: center;
+    }
+    .project_section_wrapper h1
+    {
+        /* display: block; */
+        align-self: flex-start;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: seashell;
+        text-align: center;
+        
+    }
+    /* Poject Section End  */
 
 
 /*---------------------- Skills Section Start ----------------- */
@@ -172,6 +195,27 @@ body{
     }
 
     /*---------------------SERVICES SECTION Start------------------------ */
+
+    .section_wrapper
+    {
+      min-height: 100vh;
+      width: 100vw;
+      background-color: #008877;
+      display: grid;
+      place-items:center;
+      justify-content: center;
+    }
+    .section_wrapper h1
+    {
+        /* display: block; */
+        align-self: flex-start;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: seashell;
+        text-align: center;
+        
+    }
 
       .section_wrapper p,i,h3,h2
       {
@@ -334,7 +378,7 @@ body{
 }
 .menuBtn.act > span:after,
 .menuBtn.act > span:before {
-  background-color: #008877;
+  background-color: #fff;
   top: 1px;
 }
 .menuBtn.act > span:after {
@@ -393,6 +437,7 @@ body{
   display: inline-block;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
   font-size: 30px;
+  font-weight: 500;
   transition: color ease-in-out 0.5s;
 }
 .mainMenu a:hover 
