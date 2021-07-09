@@ -158,15 +158,41 @@
   <!-- END--SERVICES -->
 
   <!-- Contact Start -->
-  <div class="section_wrapper contact">
+  <div class="section_wrapper contact" id="contact">
     <h1>Contact Me</h1>
+
+
+      <form action="mail.php" method="POST">
+          <ul>
+              <li>
+                  <label for="name"><span>Name <span class="required-star">*</span></span></label>
+                  <input type="text" id="name" name="name">
+              </li>
+              <li>
+                  <label for="mail"><span>Email <span class="required-star">*</span></span></label>
+                  <input type="text" id="mail" name="email">
+              </li>
+              <li>
+                <label for="subject"><span>Subject <span class="required-star">*</span></span></label>
+                <input type="text" id="subject" name="subject">
+            </li>
+              <li>
+                  <label for="msg"><span>Message</span></label>
+                  <textarea rows="2" cols="50" name="msg"></textarea>
+              </li>
+              <li>
+                <input type="submit" value="Send">
+                <!-- <input type="reset" value="Clear"> -->
+              </li>
+          </ul>
+      </form>
+      
   </div>
+</div>
   <!-- Contact End -->
 
   <!-- ----------------------Footer Start------------------ -->
-  <footer>
-    
-  </footer>
+
   <!-- ----------------------Footer End------------------ -->
 
 
