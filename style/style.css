@@ -22,14 +22,14 @@ body{
         width:30%;
         float:left;
     }
-    #logo h1
+    #logo h2
     {
         cursor:pointer;
         transition:1s;
         color:white;
         font-family:cambria;
     }
-    #logo h1:hover
+    #logo h2:hover
     {
         color:black;
     }
@@ -80,18 +80,14 @@ body{
 
 
     /*---------------------- About Section Start-------------------- */
-    .about_section_wrapper
+    .about
     {
-      min-height: 100vh;
-      width: 100vw;
-      background-color: #3d3d3d;
-      display: grid;
-      place-items:center;
-      justify-content: center;
+
+      background-color:#34495e ;
+  
     }
-    .about_section_wrapper h1
+    h1
     {
-        /* display: block; */
         align-self: flex-start;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 40px;
@@ -103,28 +99,22 @@ body{
 
     /*---------------------- About Section End-------------------- */
 
-    /* Project Section Start */
-    .project_section_wrapper
+    /*------------------------ Project Section Start-------- */
+    .section_wrapper
     {
-      min-height: 100vh;
-      width: 100vw;
-      background-color: #34495e;
-      display: grid;
-      place-items:center;
-      justify-content: center;
+    display: grid;
+    min-height: 100vh;
+    width: 100vw;
+    place-items:center;
+    justify-content: center;
+    overflow: hidden;
     }
-    .project_section_wrapper h1
+    .project
     {
-        /* display: block; */
-        align-self: flex-start;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 40px;
-        font-weight: bold;
-        color: seashell;
-        text-align: center;
-        
+      background-color: #3d3d3d;
     }
-    /* Poject Section End  */
+
+    /* ------------------Poject Section End ------------ */
 
 
 /*---------------------- Skills Section Start ----------------- */
@@ -137,19 +127,6 @@ body{
         place-items:center;
         justify-content: center;
         overflow: hidden;
-    }
-    .section_container h1
-    {
-      align-self: flex-start;
-        box-sizing: border-box;
-        display: block;
-        margin-bottom:50px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 40px;
-        font-weight: bold;
-        color: seashell;
-        text-align: center;
-        
     }
 
     .profile_container
@@ -196,41 +173,34 @@ body{
 
     /*---------------------SERVICES SECTION Start------------------------ */
 
-    .section_wrapper
+    .service
     {
-      min-height: 100vh;
-      width: 100vw;
       background-color: #008877;
-      display: grid;
-      place-items:center;
-      justify-content: center;
-    }
-    .section_wrapper h1
-    {
-        /* display: block; */
-        align-self: flex-start;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 40px;
-        font-weight: bold;
-        color: seashell;
-        text-align: center;
-        
     }
 
-      .section_wrapper p,i,h3,h2
+      .service p,i,h3,h2
       {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         text-align: center;
         color:#fff;
       }
-      .section_wrapper .box
+      .service .box
       {
         margin: 20px 0px;
 
         
       }
 
-    /*---------------------SERVICES SECTION Start------------------------ */
+    /*---------------------SERVICES SECTION END------------------------ */
+
+    /* -------------------Contact Section Start------------------ */
+.contact
+{
+  background-color: #34495e;
+}
+
+    /* -------------------Contact Section END------------------ */
+
 
 
    /* ----------------------Typing Animation Home Start-------------- */
@@ -329,7 +299,7 @@ body{
     width: 100%;
   }
   
-/* ------------------Skilll Bar Start---------------- */
+/* ------------------Skilll Bar END---------------- */
 
 
   /*-------------------- Mobile Menu Start---------------*/
