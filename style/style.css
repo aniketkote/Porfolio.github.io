@@ -89,6 +89,7 @@ body{
     }
     h1
     {
+      margin-bottom: 50px;
       text-transform: uppercase;
         align-self: flex-start;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -97,6 +98,12 @@ body{
         color: seashell;
         text-align: center;
         
+    }
+    
+    .about_wrapper .inner_wrapper p
+    {
+      color: white;
+
     }
 
     /*---------------------- About Section End-------------------- */
@@ -521,6 +528,10 @@ a {
       top: -13px;
       left: -6px;
   }
+  .skill_container {
+
+    grid-gap: 20px;
+  }
   .skill_container .box h2 {
 
     margin-top: 30px;
@@ -535,7 +546,7 @@ a {
   @media (min-width: 420px) and (max-width: 659px) {
 
     .container {
-      grid-template-columns: repeat(2, 160px);
+      grid-template-columns: repeat(1, 160px);
     }
 
   .skill_container .box canvas {
@@ -546,6 +557,10 @@ a {
       width: 100%;
     
   }
+  .skill_container {
+
+    grid-gap: 20px;
+  }
   .skill_container .box h2 {
 
     margin-top: 30px;
@@ -555,6 +570,11 @@ a {
        height: 30px;
        visibility: visible;
      }
+}
+h4
+{
+  color: white;
+  text-align: center;
 }
   
   @media (min-width: 660px) and (max-width: 899px) {
@@ -577,7 +597,7 @@ a {
   @media (min-width: 900px) and (max-width:1365px){
     
     .skill_container {
-      grid-template-columns: repeat(3, 160px);
+      grid-template-columns: repeat(4, 160px);
     }
     .skill_container .box canvas {
       top: -11px;
@@ -587,7 +607,7 @@ a {
   @media (min-width:1366px)
    {
     .skill_container {
-      grid-template-columns: repeat(3, 160px);
+      grid-template-columns: repeat(4, 160px);
     }
     
   }
