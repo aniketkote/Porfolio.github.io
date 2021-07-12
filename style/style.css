@@ -651,10 +651,7 @@ h4
       top: -11px;
       left: -11px;
     }
-    .p_container
-    {
-      width: 100%;
-     }
+
   }
   @media (min-width:1366px)
    {
@@ -665,7 +662,10 @@ h4
     {
       grid-template-columns:repeat(2, 260px);
     }
-    
+    .p_container
+    {
+      width: 60%;
+     }
   }
 
   
