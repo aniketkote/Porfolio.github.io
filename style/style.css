@@ -89,12 +89,12 @@ body{
     }
     .about p
     {
-      margin: 0px 50px 10px;
+      margin: 0px 30px 10px;
       text-align:justify;
       font-size: 20px;
       font-weight: 500;
       color: rgba(255, 255, 255, 0.664);
-      line-height: 32px;
+      line-height: 30px;
 
     }
   
