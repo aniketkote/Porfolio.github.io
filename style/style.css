@@ -90,7 +90,7 @@ body{
     .about p
     {
       margin: 0px 50px 10px;
-      text-align: left ;
+      text-align:justify;
       font-size: 20px;
       font-weight: 500;
       color: rgba(255, 255, 255, 0.664);
