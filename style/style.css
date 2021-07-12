@@ -100,7 +100,7 @@ body {
 }
 
 h1 {
-  text-transform: uppercase;
+  text-transform: capitalize;
   align-self: flex-start;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 40px;
@@ -108,6 +108,19 @@ h1 {
   color: seashell;
   text-align: center;
 }
+h1::after
+{
+  position: absolute;
+    content: '';
+    top: 100%;
+    height: 1px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #3498db;
+}
+
 
 #skill h1 {
   margin-bottom: 50px;
@@ -125,7 +138,7 @@ h1 {
 
 /*---------------------- About Section End-------------------- */
 
-/*------------------------ Project Section Start-------- */
+/*------------------------ education Section Start-------- */
 
 .section_wrapper {
   display: grid;
@@ -136,11 +149,76 @@ h1 {
   overflow: hidden;
 }
 
-.project {
+.education {
   background-color: #008877;
 }
+.course_outer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-/* ------------------Poject Section End ------------ */
+}
+.course_wrapper
+{
+  background-color: chocolate;
+  border-radius: 50px 50px 50px 50px;
+  width: 300px;
+  height: auto;
+  border: black solid 2px;
+}
+.course_wrapper h5
+{
+  margin: 0;
+  margin-bottom: 5px;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+}
+.course_sub
+{
+  padding: 10px;
+}
+.icon_wrapper
+{
+  background-color: white;
+  width:100%;
+  height: 100%;
+  border-radius: 50px 50px 0px 0px;
+
+}
+
+.un_icon
+{
+  width: 100%;
+  height: 100%;
+
+}
+.university_title
+{
+  font-size: 24px;
+  font-weight:600
+
+}
+.course_duretion
+{
+  font-size: 15px;
+  font-weight: normal;
+}
+.course_title
+{
+  font-size: 18px;
+  font-family: 500;
+
+}
+.course_desc
+{
+  font-size: 15px;
+  font-weight: normal;
+  text-align: left;
+}
+
+/* ------------------education Section End ------------ */
 
 /*---------------------- Skills Section Start ----------------- */
 
