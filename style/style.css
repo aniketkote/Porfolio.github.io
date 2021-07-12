@@ -87,12 +87,16 @@ body{
       background-color:#0d0c2d ;
   
     }
-    .about p,h4
+    .about p
     {
-      color: white;
-      text-align: center;
-      margin: 0px 50px;
+      margin: 0px 50px 10px;
+      text-align: left ;
+      font-size: 20px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.664);
+
     }
+  
     h1
     {
       text-transform: uppercase;
@@ -109,13 +113,18 @@ body{
       margin-bottom: 50px;
 
     }
-    
-    .about_wrapper .inner_wrapper p
+    .about_wrapper .inner_wrapper
     {
-      color: white;
-
+      display: grid;
     }
-
+  
+    .p_container
+    {
+      width: 60%;
+      justify-self: center;
+      align-self: center;
+    }
+    
     /*---------------------- About Section End-------------------- */
 
     /*------------------------ Project Section Start-------- */
@@ -264,13 +273,17 @@ input[type="submit"] {
     /* margin: 0px 10px 10px; */
 }
 form {
-        align-self: self-start;
         width: 65%;
         background-color: #ffffff;
         padding: 20px 40px;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         border-radius: 3px;
         overflow: hidden;
+        margin: 20px 0px;
+}
+form h1{
+  color:#102a43;
+  margin: 0px;
 }
 
 .required-star {
@@ -593,6 +606,11 @@ a {
        height: 30px;
        visibility: visible;
      }
+
+     .p_container
+     {
+       width: 100%;
+      }
 }
 h4
 {
@@ -617,6 +635,10 @@ h4
 
       margin-top: 30px;
     }
+    .p_container
+    {
+      width: 100%;
+     }
 
   }
   
