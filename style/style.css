@@ -83,7 +83,8 @@ body {
 /*---------------------- About Section Start-------------------- */
 
 .about {
-  background-color: #0d0c2d;
+  background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000);
+
 }
 
 .about p {
@@ -166,7 +167,7 @@ h1::after
   background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000);
   width: 300px;
   height: auto;
-  border: rgba(255, 255, 255, 0.513) inset 2px;
+  border: rgba(255, 255, 255, 0.842)  2px groove;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .course_wrapper h5
