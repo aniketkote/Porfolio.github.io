@@ -161,10 +161,13 @@ h1::after
 }
 .course_wrapper
 {
+  margin: 50px 10px;
+  padding: 10px;
   background-color: chocolate;
   width: 300px;
   height: auto;
-  border: black solid 2px;
+  border: rgba(255, 255, 255, 0.513) inset 5px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .course_wrapper h5
 {
@@ -174,10 +177,7 @@ h1::after
   text-transform: capitalize;
   color: white;
 }
-.course_sub
-{
-  padding: 10px;
-}
+
 .icon_wrapper
 {
   background-color: white;
