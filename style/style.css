@@ -151,7 +151,8 @@ h1::after
 }
 
 .education {
-  background-color: #008877;
+  /* background-color: #008877; */
+  background-image: linear-gradient(to right top, #0f3734, #003646, #00325b, #002765, #450357);
 }
 .course_outer
 {
@@ -164,10 +165,11 @@ h1::after
 {
   margin: 50px 10px;
   padding: 10px;
-  background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000);
+  /* background-color: chocolate; */
+  /* background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000); */
   width: 300px;
   height: auto;
-  border: rgba(255, 255, 255, 0.842)  2px groove;
+  /* border: rgba(255, 255, 255, 0.842)  2px groove; */
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .course_wrapper h5
@@ -222,7 +224,7 @@ h1::after
 /*---------------------- Skills Section Start ----------------- */
 
 .section_container {
-  background: #0d0c2d;
+  background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000);
   display: grid;
   min-height: 100vh;
   width: 100vw;
@@ -270,7 +272,8 @@ h1::after
 /*---------------------SERVICES SECTION Start------------------------ */
 
 #services {
-  background-color: #008877;
+  background-image: linear-gradient(to right top, #0f3734, #003646, #00325b, #002765, #450357);
+
 }
 
 .service {
@@ -294,7 +297,8 @@ h1::after
 /* -------------------Contact Section Start------------------ */
 
 .contact {
-  background-color: #0d0c2d;
+  background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000);
+
 }
 
 label, input, textarea {
