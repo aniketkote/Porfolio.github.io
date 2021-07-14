@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);  /*Font*/
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+/*Font*/
 
 .stop-scrolling {
   height: 100%;
@@ -84,7 +85,6 @@ body {
 
 .about {
   background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000);
-
 }
 
 .about p {
@@ -95,8 +95,8 @@ body {
   color: rgb(255, 255, 255);
   line-height: 30px;
 }
-.p_container:first-child::first-letter
-{
+
+.p_container:first-child::first-letter {
   font-size: 25px;
 }
 
@@ -109,19 +109,18 @@ h1 {
   color: seashell;
   text-align: center;
 }
-h1::after
-{
-  position: absolute;
-    content: '';
-    top: 100%;
-    height: 1px;
-    width: 50px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    background: #3498db;
-}
 
+h1::after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  height: 1px;
+  width: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #3498db;
+}
 
 #skill h1 {
   margin-bottom: 50px;
@@ -153,35 +152,32 @@ h1::after
 .education {
   background-color: #008877;
   background-image: linear-gradient(to right top, #0f3734, #003646, #00325b, #002765, #190357);
-
 }
-.course_outer
-{
+
+.course_outer {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.course_wrapper
-{
+
+.course_wrapper {
   margin: 50px 10px;
   padding: 10px;
   width: 300px;
   height: auto;
-  background: linear-gradient(-45deg,rgba( 255, 255, 255, 0.1 ),rgba( 255, 255, 255, 0.4 ));
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background: linear-gradient(-45deg, rgba( 255, 255, 255, 0.1), rgba( 255, 255, 255, 0.4));
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+  backdrop-filter: blur( 4px);
+  -webkit-backdrop-filter: blur( 4px);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18);
   /* background-color: chocolate; */
   /* background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000); */
-
   /* border: rgba(255, 255, 255, 0.842)  2px groove; */
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
-.course_wrapper h5
-{
+
+.course_wrapper h5 {
   margin: 0;
   margin-bottom: 10px;
   text-align: center;
@@ -189,39 +185,33 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   color: white;
 }
 
-.icon_wrapper
-{
+.icon_wrapper {
   background-color: white;
-  width:100%;
-  height: 100%;
-
-}
-
-.un_icon
-{
   width: 100%;
   height: 100%;
-
 }
-.university_title
-{
+
+.un_icon {
+  width: 100%;
+  height: 100%;
+}
+
+.university_title {
   font-size: 24px;
-  font-weight:600
-
+  font-weight: 600
 }
-.course_duretion
-{
+
+.course_duretion {
   font-size: 15px;
   font-weight: normal;
 }
-.course_title
-{
+
+.course_title {
   font-size: 18px;
   font-family: 500;
-
 }
-.course_desc
-{
+
+.course_desc {
   font-size: 15px;
   font-weight: normal;
   text-align: left;
@@ -281,7 +271,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 #services {
   background-image: linear-gradient(to right top, #0f3734, #003646, #00325b, #002765, #190357);
-
 }
 
 .service {
@@ -306,7 +295,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .contact {
   background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000);
-
 }
 
 label, input, textarea {
