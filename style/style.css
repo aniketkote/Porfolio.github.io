@@ -273,6 +273,7 @@ h1::after {
 }
 #project .card
 {
+  margin: 20px 0px;
   box-sizing: border-box;
   padding: 20px;
   width: 300px;
