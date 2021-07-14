@@ -166,10 +166,17 @@ h1::after
 {
   margin: 50px 10px;
   padding: 10px;
-  /* background-color: chocolate; */
-  /* background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000); */
   width: 300px;
   height: auto;
+  background: linear-gradient(-45deg,rgba( 255, 255, 255, 0.1 ),rgba( 255, 255, 255, 0.4 ));
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  /* background-color: chocolate; */
+  /* background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000); */
+
   /* border: rgba(255, 255, 255, 0.842)  2px groove; */
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
