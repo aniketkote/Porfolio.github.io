@@ -81,16 +81,16 @@ body {
 /* ------------------Land Area Section End ---------------------------- */
 
 /*---------------------- About Section Start-------------------- */
-
+/* 
 .about {
   background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000);
 
-}
+} */
 
 .about p {
   margin: 0px 30px 10px;
   font-family: 'Ubuntu';
-  text-align: left;
+  text-align: justify;
   /* font-weight: 500; */
   color: rgb(255, 255, 255);
   line-height: 30px;
@@ -150,11 +150,11 @@ h1::after
   overflow: hidden;
 }
 
-.education {
-  /* background-color: #008877; */
+/* .education {
+  background-color: #008877;
   background-image: linear-gradient(to right top, #0f3734, #003646, #00325b, #002765, #190357);
 
-}
+} */
 .course_outer
 {
   display: flex;
@@ -232,7 +232,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 /*---------------------- Skills Section Start ----------------- */
 
 .section_container {
-  background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000);
+  /* background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000); */
   display: grid;
   min-height: 100vh;
   width: 100vw;
@@ -279,10 +279,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 /*---------------------SERVICES SECTION Start------------------------ */
 
-#services {
+/* #services {
   background-image: linear-gradient(to right top, #0f3734, #003646, #00325b, #002765, #190357);
 
-}
+} */
 
 .service {
   display: grid;
@@ -304,10 +304,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 /* -------------------Contact Section Start------------------ */
 
-.contact {
+/* .contact {
   background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000);
 
-}
+} */
 
 label, input, textarea {
   display: block;
@@ -742,4 +742,9 @@ h4 {
   .p_container {
     width: 60%;
   }
+}
+.bg_changer
+{
+  background-image: linear-gradient(to right top, #0f3734, #003646, #00325b, #002765, #190357);
+
 }
