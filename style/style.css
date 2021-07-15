@@ -167,8 +167,6 @@ h1::after {
   height: auto;
   background: linear-gradient(-45deg, rgba( 255, 255, 255, 0.1), rgba( 255, 255, 255, 0.4));
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
-  backdrop-filter: blur( 4px);
-  -webkit-backdrop-filter: blur( 4px);
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18);
   /* background-color: chocolate; */
@@ -277,11 +275,13 @@ h1::after {
   display: grid;
   place-items: center;
   justify-content: center;
+  align-items: center;
   width: 100vw;
   overflow: hidden;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(2, 300px);
   grid-gap: 50px 50px;
   margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
 #project .card {
@@ -293,8 +293,13 @@ h1::after {
   background-color: rgb(223, 223, 223);
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
+.desc_wrapper
+{
+  height: 100px;
+  overflow: hidden;
+}
 
-#project h5, ul {
+#project ul,h5 {
   text-align: center;
   margin: 0px;
   margin-bottom: 20px;
@@ -305,7 +310,7 @@ h1::after {
   font-weight: 600;
 }
 
-#project .desc {
+#project .desc_wrapper .desc {
   font-size: 15px;
   font-weight: 400;
 }
@@ -811,7 +816,7 @@ h4 {
 
   .project_container
   {
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(2, 300px);
   }
 
 }
@@ -828,6 +833,6 @@ h4 {
   }
   .project_container
 {
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(2, 300px);
 }
 }
