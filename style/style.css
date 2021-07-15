@@ -277,7 +277,7 @@ h1::after {
   align-items: center;
   width: 100vw;
   overflow: hidden;
-  grid-template-columns: repeat(2, 400px);
+  grid-template-columns: repeat(2,400px);
   grid-gap: 50px 50px;
   padding-bottom: 40px;
   flex-wrap: wrap;
