@@ -272,12 +272,23 @@ h1::after {
 #project {
   background-image: linear-gradient(to right top, #0f3734, #003646, #00325b, #002765, #190357);
 }
+.project_container
+{
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  width: 100vw;
+  overflow: hidden;
+  grid-template-columns: repeat(3, 300px);
+  grid-gap: 50px 50px;
+  margin-bottom: 40px;
+}
 
 #project .card {
-  margin: 20px 0px;
+  margin: 20px;
   box-sizing: border-box;
   padding: 20px;
-  width: 300px;
+  width: auto;
   height: auto;
   background-color: rgb(223, 223, 223);
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -311,9 +322,17 @@ h1::after {
 }
 
 #project .view {
+  background-color: palevioletred;
+  padding: 5px;
   margin-top: 20px;
+  border-radius: 50px;
+  transition: ease-in-out 500ms;
 }
-
+#project .view:hover
+{
+  transition: ease-in-out 500ms;
+  opacity: 0.5;
+}
 #projectr .tech {
   margin: 0px;
 }
@@ -708,6 +727,12 @@ footer {
     height: 30px;
     visibility: visible;
   }
+
+  .project_container
+{
+  grid-template-columns: repeat(1, 300px);
+}
+
 }
 
 @media (min-width: 420px) and (max-width: 659px) {
@@ -737,6 +762,12 @@ footer {
   .p_container {
     width: 100%;
   }
+
+  .project_container
+  {
+    grid-template-columns: repeat(1, 300px);
+  }
+
 }
 
 h4 {
@@ -761,6 +792,12 @@ h4 {
   .p_container {
     width: 100%;
   }
+
+  .project_container
+{
+  grid-template-columns: repeat(2, 300px);
+}
+
 }
 
 @media (min-width: 900px) and (max-width:1365px) {
@@ -771,6 +808,12 @@ h4 {
     top: -11px;
     left: -11px;
   }
+
+  .project_container
+  {
+    grid-template-columns: repeat(3, 300px);
+  }
+
 }
 
 @media (min-width:1366px) {
@@ -783,4 +826,8 @@ h4 {
   .p_container {
     width: 60%;
   }
+  .project_container
+{
+  grid-template-columns: repeat(3, 300px);
+}
 }
