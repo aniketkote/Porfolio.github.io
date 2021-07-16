@@ -305,11 +305,13 @@ h1::after {
 }
 
 #project .name {
-  font-size: 24px;
+  color: #29296d;
+  font-size: 26px;
   font-weight: 600;
 }
 
 #project .desc_wrapper .desc {
+  color: #585858c4;
   font-size: 15px;
   font-weight: 400;
 }
@@ -323,22 +325,33 @@ h1::after {
   padding: 0px;
   display: inline-block;
   margin-right: 5px;
+  background-color: #5d5d5d1c;
+  padding: 2px 7px;
 }
 
-#project .view {
+#project .view 
+{
+  margin-top: 40px;
+}
+
+#project .view a {
   background-color: palevioletred;
-  padding: 5px;
-  margin-top: 20px;
+  padding: 10px 30px;
   border-radius: 50px;
   transition: ease-in-out 500ms;
 }
-#project .view:hover
+#project .view a:hover
 {
   transition: ease-in-out 500ms;
   opacity: 0.5;
 }
 #projectr .tech {
   margin: 0px;
+}
+
+#projectr .tech li
+{
+
 }
 
 /* Project Section End */
