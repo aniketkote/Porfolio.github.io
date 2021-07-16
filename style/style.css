@@ -734,7 +734,7 @@ footer {
 
   .project_container
 {
-  grid-template-columns: repeat(1, 400px);
+  grid-template-columns: repeat(1, 350px);
 }
 
 }
@@ -769,7 +769,7 @@ footer {
 
   .project_container
   {
-    grid-template-columns: repeat(1, 400px);
+    grid-template-columns: repeat(1, 350px);
   }
 
 }
@@ -799,7 +799,7 @@ h4 {
 
   .project_container
 {
-  grid-template-columns: repeat(2, 400px);
+  grid-template-columns: repeat(2, 350px);
 }
 
 }
