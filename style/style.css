@@ -462,6 +462,82 @@ input, textarea {
 
 /* -------------------Contact Section END------------------ */
 
+
+/* -------------------Footer Section Start------------------ */
+
+footer {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  display: grid;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  width: 100%;
+  min-height: 100px;
+  background-color: rgb(151, 151, 151);
+  overflow-x: hidden;
+}
+ footer h2
+ {
+   font-size: 15px;
+   font-weight: 500;
+   color: #f5f5f56b;
+ }
+ footer h1
+ {
+   font-size: 14px;
+   font-weight: 400;
+ }
+.social h1
+{
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+}
+.social ul
+{
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.social ul li
+{
+ margin:10px; 
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 100px;
+  background-color: rgb(19, 25, 41);
+  text-align-last:center;
+  line-height: 30px;
+  transition: ease-in-out 500ms ;
+}
+.social ul li:hover
+{
+  transition: ease-in-out 500ms ;
+  opacity: 0.6;
+}
+.social ul li i
+{
+  color: white;
+  font-size: 30px;
+}
+.scroll_top
+{
+  position: relative;
+  top: 0px;
+  left: 40%;
+}
+.scroll_top i
+{
+  font-size: 50px;
+  color: whitesmoke;
+}
+/* -------------------Footer Section END------------------ */
+
+
 /* ----------------------Typing Animation Home Start-------------- */
 
 .container {
@@ -713,13 +789,6 @@ a {
 
 /*-------------------- Mobile Menu End---------------*/
 
-footer {
-  padding: 10px;
-  width: 100%;
-  min-height: 100px;
-  background-color: skyblue;
-  overflow-x: hidden;
-}
 
 @media (max-width: 419px) {
   .skill_container .box canvas {
