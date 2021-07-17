@@ -1,25 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 /*Font*/
-
-
-
+*{
+  outline: none;
+}
 body {
-  user-select:none;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  overflow-x: hidden;
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  user-select: none;
+  overflow-x: hidden;
 }
 
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
 }
-hr
-{
+
+hr {
   margin-bottom: 20px;
 }
+
 #header {
   width: 100%;
   float: left;
@@ -175,9 +176,6 @@ h1::after {
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18);
-  /* background-color: chocolate; */
-  /* background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000); */
-  /* border: rgba(255, 255, 255, 0.842)  2px groove; */
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
@@ -275,15 +273,15 @@ h1::after {
 #project {
   background-image: linear-gradient(to right top, #0f3734, #003646, #00325b, #002765, #190357);
 }
-.project_container
-{
+
+.project_container {
   display: grid;
   place-items: center;
   justify-content: center;
   align-items: center;
   width: 100vw;
   overflow: hidden;
-  grid-template-columns: repeat(2,400px);
+  grid-template-columns: repeat(2, 400px);
   grid-gap: 50px 50px;
   padding-bottom: 40px;
   flex-wrap: wrap;
@@ -299,8 +297,8 @@ h1::after {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
   overflow: hidden;
 }
-#project .card .circle
-{
+
+#project .card .circle {
   z-index: -100;
   position: absolute;
   top: -100px;
@@ -312,13 +310,12 @@ h1::after {
   filter: drop-shadow(2px 4px 6px black);
 }
 
-.desc_wrapper
-{
+.desc_wrapper {
   height: 100px;
   overflow: hidden;
 }
 
-#project ul,h5 {
+#project ul, h5 {
   text-align: center;
   margin: 0px;
   margin-bottom: 20px;
@@ -349,8 +346,7 @@ h1::after {
   padding: 2px 7px;
 }
 
-#project .view 
-{
+#project .view {
   margin-top: 40px;
 }
 
@@ -360,42 +356,17 @@ h1::after {
   border-radius: 50px;
   transition: ease-in-out 500ms;
 }
-#project .view a:hover
-{
+
+#project .view a:hover {
   transition: ease-in-out 500ms;
   opacity: 0.5;
 }
+
 #projectr .tech {
   margin: 0px;
 }
 
-
-
 /* Project Section End */
-
-/*---------------------SERVICES SECTION Start------------------------ */
-
-/* #services {
-  background-image: linear-gradient(to right top, #0f3734, #003646, #00325b, #002765, #190357);
-}
-
-.service {
-  display: grid;
-  grid-template-columns: repeat(2, 260px);
-  grid-gap: 50px;
-}
-
-.service p, i, h3, h2 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  text-align: center;
-  color: #fff;
-}
-
-.service .box {
-  margin: 20px 0px;
-} */
-
-/*---------------------SERVICES SECTION END------------------------ */
 
 /* -------------------Contact Section Start------------------ */
 
@@ -482,79 +453,78 @@ input, textarea {
 
 /* -------------------Contact Section END------------------ */
 
-
 /* -------------------Footer Section Start------------------ */
 
 footer {
+  box-sizing: border-box;
   display: grid;
   justify-content: center;
-  list-style: none;
   padding: 10px;
   width: 100%;
   height: auto;
   background-color: rgb(151, 151, 151);
   overflow-x: hidden;
 }
- footer h2
- {
-   font-size: 15px;
-   font-weight: 500;
-   color: #f5f5f56b;
- }
- footer h1
- {
-   font-size: 14px;
-   font-weight: 400;
- }
-.social h1
-{
+
+footer h2 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #f5f5f56b;
+}
+
+footer h1 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.social h1 {
   font-size: 28px;
   font-weight: 600;
   color: white;
 }
-.social ul
-{
+
+.social ul {
   padding: 0px;
   display: flex;
   justify-content: center;
   list-style: none;
 }
-.social ul li
-{
- margin:10px; 
+
+.social ul li {
+  margin: 10px;
   display: inline-block;
   width: 30px;
   height: 30px;
   padding: 5px;
   border-radius: 100px;
   background-color: rgb(19, 25, 41);
-  text-align-last:center;
+  text-align-last: center;
   line-height: 30px;
-  transition: ease-in-out 500ms ;
+  transition: ease-in-out 500ms;
 }
-.social ul li:hover
-{
-  transition: ease-in-out 500ms ;
+
+.social ul li:hover {
+  transition: ease-in-out 500ms;
   opacity: 0.6;
 }
-.social ul li i
-{
+
+.social ul li i {
   color: white;
   font-size: 30px;
 }
-.scroll_top
-{
+
+.scroll_top {
   position: relative;
   top: 0px;
   left: 40%;
 }
-.scroll_top i
-{
+
+.scroll_top i {
   font-size: 50px;
   color: whitesmoke;
 }
-/* -------------------Footer Section END------------------ */
 
+/* -------------------Footer Section END------------------ */
 
 /* ----------------------Typing Animation Home Start-------------- */
 
@@ -807,7 +777,6 @@ a {
 
 /*-------------------- Mobile Menu End---------------*/
 
-
 @media (max-width: 419px) {
   .skill_container .box canvas {
     position: absolute;
@@ -827,12 +796,9 @@ a {
     height: 30px;
     visibility: visible;
   }
-
-  .project_container
-{
-  grid-template-columns: repeat(1, 350px);
-}
-
+  .project_container {
+    grid-template-columns: repeat(1, 350px);
+  }
 }
 
 @media (min-width: 420px) and (max-width: 659px) {
@@ -862,12 +828,9 @@ a {
   .p_container {
     width: 100%;
   }
-
-  .project_container
-  {
+  .project_container {
     grid-template-columns: repeat(1, 350px);
   }
-
 }
 
 h4 {
@@ -892,12 +855,9 @@ h4 {
   .p_container {
     width: 100%;
   }
-
-  .project_container
-{
-  grid-template-columns: repeat(2, 350px);
-}
-
+  .project_container {
+    grid-template-columns: repeat(2, 350px);
+  }
 }
 
 @media (min-width: 900px) and (max-width:1365px) {
@@ -908,12 +868,9 @@ h4 {
     top: -11px;
     left: -11px;
   }
-
-  .project_container
-  {
+  .project_container {
     grid-template-columns: repeat(2, 400px);
   }
-
 }
 
 @media (min-width:1366px) {
@@ -926,8 +883,7 @@ h4 {
   .p_container {
     width: 60%;
   }
-  .project_container
-{
-  grid-template-columns: repeat(2, 400px);
-}
+  .project_container {
+    grid-template-columns: repeat(2, 400px);
+  }
 }
