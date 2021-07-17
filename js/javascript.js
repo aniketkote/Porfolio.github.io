@@ -1,3 +1,8 @@
+$(document).bind("contextmenu",function(e){
+  return false;
+    });
+
+
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
