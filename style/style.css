@@ -397,7 +397,6 @@ h1::after {
   height: 600px;
   border-radius: 100%;
   background-color: rgb(255 2 44 / 15%);
-  filter: drop-shadow(2px 4px 6px black);
 }
 
 .desc_wrapper {
