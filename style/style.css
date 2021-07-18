@@ -37,6 +37,8 @@ hr {
 }
 
 #logo h2 {
+  font-weight: 100;
+  letter-spacing: 2px;
   cursor: pointer;
   transition: 1s;
   color: white;
