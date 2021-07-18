@@ -1,8 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 /*Font*/
-*{
+
+* {
   outline: none;
 }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   box-sizing: border-box;
@@ -86,12 +88,93 @@ hr {
   height: 100vh;
 }
 
+/* ----------------------Typing Animation Home Start-------------- */
+
+.container {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.container p {
+  margin: 0px;
+  margin-top: 10px;
+  height: 100px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 35px;
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container p span.typed-text {
+  text-decoration: dotted;
+  font-weight: bolder;
+  color: #dd7732;
+}
+
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+
+.container p span.cursor.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+/* ----------------------Typing Animation Home End-------------- */
+
+.about_btn {
+  padding: 20px;
+  align-self: flex-start;
+}
+
+.about_btn a {
+  font-weight: 500;
+  border: 1px solid rgb(85, 85, 85);
+  border-radius: 5px;
+  padding: 8px;
+  transition: ease-in-out 500ms;
+}
+
+.about_btn a:hover {
+  transition: ease-in-out 400ms;
+  color: white;
+  background-color: rgb(182, 182, 182);
+}
+
 /* ------------------Land Area Section End ---------------------------- */
 
 /*---------------------- About Section Start-------------------- */
 
 .about {
-  background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000);
+  /* background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000); */
+  background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(90, 92, 106, 1) 0%, rgba(32, 45, 58, 1) 81.3%);
 }
 
 .about p {
@@ -157,8 +240,9 @@ h1::after {
 }
 
 .education {
-  background-color: #008877;
-  background-image: linear-gradient(to right top, #0f3734, #003646, #00325b, #002765, #190357);
+  /* background-color: #008877;
+  background-image: linear-gradient(to right top, #0f3734, #003646, #00325b, #002765, #190357); */
+  background-image: linear-gradient( 112.1deg, rgba(32, 38, 57, 1) 11.4%, rgba(63, 76, 119, 1) 70.2%);
 }
 
 .course_outer {
@@ -224,7 +308,8 @@ h1::after {
 /*---------------------- Skills Section Start ----------------- */
 
 .section_container {
-  background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000);
+  /* background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000); */
+  background-image: radial-gradient( circle farthest-corner at 10% 20%, rgba(0, 107, 141, 1) 0%, rgba(0, 69, 91, 1) 90%);
   display: grid;
   min-height: 100vh;
   width: 100vw;
@@ -234,7 +319,9 @@ h1::after {
 }
 
 .profile_container {
+  padding-top: 30px;
   display: grid;
+  grid-template-rows: auto 150px;
   height: 100vh;
   place-items: center;
   justify-content: center;
@@ -271,7 +358,8 @@ h1::after {
 /* Project Section Start */
 
 #project {
-  background-image: linear-gradient(to right top, #0f3734, #003646, #00325b, #002765, #190357);
+  /* background-image: linear-gradient(to right top, #0f3734, #003646, #00325b, #002765, #190357); */
+  background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%, rgba(19, 30, 37, 1) 24.5%, rgba(19, 30, 37, 1) 66%);
 }
 
 .project_container {
@@ -371,7 +459,9 @@ h1::after {
 /* -------------------Contact Section Start------------------ */
 
 .contact {
-  background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000);
+  /* background-image: linear-gradient(to left bottom, #051937, #171228, #190a1a, #12040d, #000000); */
+  /* background-image: linear-gradient( 118.4deg,  rgba(122,35,52,1) 27.5%, rgba(62,9,27,1) 92.7% ); */
+  background-image: linear-gradient( 118.4deg, rgb(35 122 98) 27.5%, rgb(9 62 48) 92.7%);
 }
 
 label, input, textarea {
@@ -467,6 +557,7 @@ footer {
 }
 
 footer h2 {
+  text-align: center;
   font-size: 15px;
   font-weight: 500;
   color: #f5f5f56b;
@@ -525,64 +616,6 @@ footer h1 {
 }
 
 /* -------------------Footer Section END------------------ */
-
-/* ----------------------Typing Animation Home Start-------------- */
-
-.container {
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: flex-start;
-}
-
-.container p {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 35px;
-  padding: 10px;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  text-align: center;
-  overflow: hidden;
-}
-
-.container p span.typed-text {
-  text-decoration: dotted;
-  font-weight: bolder;
-  color: #dd7732;
-}
-
-.container p span.cursor {
-  display: inline-block;
-  background-color: #ccc;
-  margin-left: 0.1rem;
-  width: 3px;
-  animation: blink 1s infinite;
-}
-
-.container p span.cursor.typing {
-  animation: none;
-}
-
-@keyframes blink {
-  0% {
-    background-color: #ccc;
-  }
-  49% {
-    background-color: #ccc;
-  }
-  50% {
-    background-color: transparent;
-  }
-  99% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: #ccc;
-  }
-}
-
-/* ----------------------Typing Animation Home End-------------- */
 
 /* ------------------Skilll Bar Start---------------- */
 
