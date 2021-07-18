@@ -552,7 +552,7 @@ footer {
   padding: 10px;
   width: 100%;
   height: auto;
-  background-color: rgb(151, 151, 151);
+  background-color: rgb(151 151 151 / 74%);
   overflow-x: hidden;
 }
 
