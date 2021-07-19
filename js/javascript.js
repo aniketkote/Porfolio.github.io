@@ -1,18 +1,15 @@
-// $(document).bind("contextmenu",function(e){
-//   return false;
-//     });
-
+$(document).bind("contextmenu", function (e) {
+  return false;
+});
 
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
-
 const textArray = ["Aniket", "Web Developer", "Java Developer"];
 const typingDelay = 80;
 const erasingDelay = 80;
 const newTextDelay = 2000; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
-
 function type() {
   if (charIndex < textArray[textArrayIndex].length) {
     if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
@@ -25,7 +22,6 @@ function type() {
     setTimeout(erase, newTextDelay);
   }
 }
-
 function erase() {
   if (charIndex > 0) {
     if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
@@ -40,13 +36,10 @@ function erase() {
     setTimeout(type, typingDelay + 1100);
   }
 }
-
 document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
-
 //  Skills Bar Function
-
 $(document).ready(function ($) {
   function animateElements() {
     $('.progressbar').each(function () {
@@ -72,19 +65,11 @@ $(document).ready(function ($) {
       }
     });
   }
-
   // Show animated elements
   animateElements();
   $(window).scroll(animateElements);
-
-
-
-
 });
-
-
 // -------------// Mobile Menu----------------
-
 $(document).ready(function () {
   // menu click event
   $('.menuBtn').click(function () {
@@ -97,22 +82,16 @@ $(document).ready(function () {
       $('.mainMenu').removeClass('act');
       $('body').removeClass('stop-scrolling')
     }
-
   });
   $('a').click(function () {
-
     $('.mainMenu').removeClass('act');
-
     $('.menuBtn').removeClass('act');
-
     if ($('body').hasClass('stop-scrolling')) {
       $('body').removeClass('stop-scrolling')
     }
   });
 });
-
 // -----------------------Smooth Scrolling Script------------------
-
 $(document).ready(function () {
   $('a[href^="#"]').on('click', function (e) {
     e.preventDefault();
@@ -121,7 +100,6 @@ $(document).ready(function () {
     $('html, body').stop().animate({
       'scrollTop': $target.offset().top
     }, 900, 'swing', function () {
-      // window.location.hash = target;
     });
   });
 });

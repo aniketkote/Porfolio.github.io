@@ -1,51 +1,42 @@
 @media only screen and (max-width: 870px) {
-	#header
-	{
-		font-size:14px;
+	#header {
+		font-size: 14px;
 	}
-	#logo
-	{
+	#logo {
 		display: flex;
 		justify-content: center;
-		width:100%;
-		float:left;
-		text-align:center;
+		width: 100%;
+		float: left;
+		text-align: center;
 	}
 	/* -------------Hiding Navigation Bar------------- */
-	#menu
-	{
+	#menu {
 		display: none;
-		width:100%;
+		width: 100%;
 		margin: 0 auto;
 	}
-	#menu ul
-
-	.container p {
+	#menu ul .container p {
 		font-size: 18px;
 		padding: 10px;
-	  }
-
-	  /* mobile navigation bars*/
-	  .menuBtn
-	  {
-		   visibility: visible;
-		 }
-
+	}
+	/* mobile navigation bars*/
+	.menuBtn {
+		visibility: visible;
+	}
 }
+
 @media only screen and (max-width: 320px) {
-	#header
-	{
-		font-size:12px;
+	#header {
+		font-size: 12px;
 	}
 	/* #logo h1
 	{
 		margin-bottom:1%;
 
 	} */
-	  #menu ul li
-	{
-		display:block;
+	#menu ul li {
+		display: block;
 	}
+}
 
- }
- /* --------------------Mobile Menu------------------ */
+/* --------------------Mobile Menu------------------ */
