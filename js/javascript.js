@@ -1,6 +1,6 @@
-$(document).bind("contextmenu", function (e) {
-  return false;
-});
+// $(document).bind("contextmenu", function (e) {
+//   return false;
+// });
 
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
@@ -55,9 +55,9 @@ $(document).ready(function ($) {
           value: percent / 100,
           size: 180,
           thickness: 5,
-          emptyFill: "#373737",
+          emptyFill: "rgba(255,255,255,.1)",
           fill: {
-            color: '#17d3e6'
+            color: '#ffffff'
           }
         }).on('circle-animation-progress', function (event, progress, stepValue) {
           $(this).find('div').text((stepValue * 100).toFixed(1) + "%");
@@ -102,4 +102,20 @@ $(document).ready(function () {
     }, 900, 'swing', function () {
     });
   });
+});
+// Technical Skills On scroll Animation Fuction
+$(window).scroll(function() {
+  var hT = $('#skill-bar-wrapper').offset().top,
+      hH = $('#skill-bar-wrapper').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+  if (wS > (hT+hH-1.4*wH)){
+      jQuery(document).ready(function(){
+          jQuery('.tech_skillbar_container').each(function(){
+              jQuery(this).find('.tech_skills').animate({
+                  width:jQuery(this).attr('data-percent')
+              }, 1000); // 5 seconds
+          });
+      });
+  }
 });

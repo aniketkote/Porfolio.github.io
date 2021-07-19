@@ -372,6 +372,50 @@ h1::after {
   height: 100%;
 }
 
+/* <!-- Technical Skills Start --> */
+
+.tech_skillbar_container {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #666463;
+  background-color: rgba(255, 255, 255, .1);
+  height: 35px;
+  height: 5px;
+}
+
+.tech_skills {
+  background-color: white;
+  height: 35px;
+  height: 5px;
+  width: 0px;
+}
+
+#skill-bar-wrapper {
+  width: 70vw;
+  margin: 50px;
+}
+
+.section_container h2 {
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.t_skills_wrapper h2 {
+  margin-top: 0px;
+}
+
+.t_skills_wrapper span {
+  float: right;
+  margin-top: 5px;
+  color: white;
+}
+
+/* <!-- Technical Skills End --> */
+
 /* Project Section Start */
 
 #project {
@@ -474,7 +518,6 @@ h1::after {
 /* -------------------Contact Section Start------------------ */
 
 .contact {
-
   background-image: linear-gradient( 118.4deg, rgb(35 122 98) 27.5%, rgb(9 62 48) 92.7%);
 }
 
@@ -565,7 +608,7 @@ footer {
   padding: 10px;
   width: 100%;
   height: auto;
-  background-color: rgb(151 151 151 / 74%);
+  background-color: rgb(12 8 25 / 82%);
   overflow-x: hidden;
 }
 
