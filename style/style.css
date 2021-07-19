@@ -394,7 +394,6 @@ h1::after {
 
 #skill-bar-wrapper {
   width: 70vw;
-  margin: 50px;
 }
 
 .section_container h2 {
@@ -887,6 +886,9 @@ a {
   .project_container {
     grid-template-columns: repeat(1, 350px);
   }
+  #skill-bar-wrapper {
+    width: 80vw;
+  }
 }
 
 @media (min-width: 420px) and (max-width: 659px) {
@@ -919,6 +921,10 @@ a {
   .project_container {
     grid-template-columns: repeat(1, 350px);
   }
+  #skill-bar-wrapper {
+    width: 80vw;
+  }
+
 }
 
 h4 {
@@ -946,6 +952,10 @@ h4 {
   .project_container {
     grid-template-columns: repeat(2, 350px);
   }
+
+  #skill-bar-wrapper {
+    width: 80vw;
+  }
 }
 
 @media (min-width: 900px) and (max-width:1365px) {
@@ -958,6 +968,9 @@ h4 {
   }
   .project_container {
     grid-template-columns: repeat(2, 400px);
+  }
+  #skill-bar-wrapper {
+    width: 80vw;
   }
 }
 

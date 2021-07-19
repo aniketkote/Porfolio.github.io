@@ -1,6 +1,7 @@
-// $(document).bind("contextmenu", function (e) {
-//   return false;
-// });
+$(document).bind("contextmenu", function (e) {
+  return false;
+});
+
 
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
@@ -39,6 +40,24 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+// Technical Skills On scroll Animation Fuction
+$(window).scroll(function () {
+  var hT = $('#skill-bar-wrapper').offset().top,
+    hH = $('#skill-bar-wrapper').outerHeight(),
+    wH = $(window).height(),
+    wS = $(this).scrollTop();
+  if (wS > (hT + hH - 1.4 * wH)) {
+    jQuery(document).ready(function () {
+      jQuery('.tech_skillbar_container').each(function () {
+        jQuery(this).find('.tech_skills').animate({
+          width: jQuery(this).attr('data-percent')
+        }, 1000); // 5 seconds
+      });
+    });
+  }
+});
+
 //  Skills Bar Function
 $(document).ready(function ($) {
   function animateElements() {
@@ -102,20 +121,4 @@ $(document).ready(function () {
     }, 900, 'swing', function () {
     });
   });
-});
-// Technical Skills On scroll Animation Fuction
-$(window).scroll(function() {
-  var hT = $('#skill-bar-wrapper').offset().top,
-      hH = $('#skill-bar-wrapper').outerHeight(),
-      wH = $(window).height(),
-      wS = $(this).scrollTop();
-  if (wS > (hT+hH-1.4*wH)){
-      jQuery(document).ready(function(){
-          jQuery('.tech_skillbar_container').each(function(){
-              jQuery(this).find('.tech_skills').animate({
-                  width:jQuery(this).attr('data-percent')
-              }, 1000); // 5 seconds
-          });
-      });
-  }
 });
