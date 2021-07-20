@@ -623,7 +623,7 @@ footer {
   padding: 10px;
   width: 100%;
   height: auto;
-  background-color: rgb(12 8 25 / 82%);
+  background-color: rgb(19 25 41);
   overflow-x: hidden;
 }
 
@@ -659,7 +659,6 @@ footer h1 {
   height: 30px;
   padding: 5px;
   border-radius: 100px;
-  background-color: rgb(19, 25, 41);
   text-align-last: center;
   line-height: 30px;
   transition: ease-in-out 500ms;
